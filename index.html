@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <div class="logo-block">💥</div>
+            <h2>HISTORY<br>QUIZ</h2>
+            <p class="subtitle">Перевір, чи ти справжній історик!</p>
+            <button id="start-btn">► ПОГНАЛИ</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="header">
+                <span id="timer">⏱ Час: 15</span>
+                <span id="score-display">💎 Бали: 0</span>
+            </div>
+            <h2 id="question-text">Запитання 1</h2>
+            <div id="answers-container"></div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <div class="logo-block">🏆</div>
+            <h2>КВІЗ Подолано!</h2>
+            <p class="result-text"></p>
+            <button id="restart-btn">↻ СПРОБУВАТИ ЩЕ</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
